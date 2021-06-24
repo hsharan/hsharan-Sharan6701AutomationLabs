@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Quicks Ship Test automtion regression suite" thread-count="3" parallel="tests" verbose="3">
+
+	<listeners>
+		<!-- <listener class-name ="com.qa.qs.listeners.ExtentReportListener" /> -->
+		 <listener class-name ="com.qa.qs.listeners.TesultsListener" />
+		<!-- <listener class-name ="com.qa.qs.listeners.TestAllureListener" /> -->
+		
+	</listeners>
+
+	<test name="Login page Test - Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.qs.tests.LoginPageTest" />
+		</classes>
+	</test>
+	
+	<test name="Home page Test - Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.qs.tests.HomePageTest" />
+		</classes>
+	</test>
+	
+	<test name="CustomerPage page Test - Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.qs.tests.CustomerPageTest" />
+		</classes>
+	</test>
+	
+	<test name="SetUp page Test - firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.qa.qs.tests.SetUpPageTest" />
+		</classes>
+	</test>
+
+</suite>
