@@ -6,6 +6,7 @@ public class ProductPage extends BasePage {
 	
 	public  ProductPage() {
 		System.out.println("This is a product page");
+		System.out.println("This is a product page");
 		
 	}
 
