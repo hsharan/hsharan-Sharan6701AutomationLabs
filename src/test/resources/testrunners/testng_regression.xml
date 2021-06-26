@@ -31,8 +31,8 @@
 		</classes>
 	</test>
 	
-	<test name="SetUp page Test - firefox">
-		<parameter name="browser" value="firefox" />
+	<test name="SetUp page Test - chrome">
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.qs.tests.SetUpPageTest" />
 		</classes>
