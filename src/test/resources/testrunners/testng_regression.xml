@@ -1,41 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Quicks Ship Test automtion regression suite" thread-count="3" parallel="tests" verbose="3">
-
+<suite
+	name="Quicks Ship Test automtion regression suite - Sharan. Hagargi"
+	thread-count="3" parallel="tests" verbose="3">
+	<!-- parallel="tests" -->
 	<listeners>
-		<!-- <listener class-name ="com.qa.qs.listeners.ExtentReportListener" /> -->
-		 <listener class-name ="com.qa.qs.listeners.TesultsListener" />
+		<listener
+			class-name="com.qa.qs.listeners.ExtentReportListener" />
+		<listener class-name="com.qa.qs.listeners.TesultsListener" />
 		<!-- <listener class-name ="com.qa.qs.listeners.TestAllureListener" /> -->
-		
+
 	</listeners>
 
-	<test name="Login page Test - Chrome">
-		<parameter name="browser" value="firefox" />
+	<test name="Login page Test - chrome">
+		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.qs.tests.LoginPageTest" />
 		</classes>
 	</test>
-	
+
 	<test name="Home page Test - Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.qs.tests.HomePageTest" />
 		</classes>
 	</test>
-	
-	<test name="CustomerPage page Test - Chrome">
-		<parameter name="browser" value="chrome" />
-		<classes>
-			<class name="com.qa.qs.tests.CustomerPageTest" />
-		</classes>
-	</test>
-	
+
+
 	<test name="SetUp page Test - chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.qs.tests.SetUpPageTest" />
 		</classes>
 	</test>
+
+
+	<test name="User Profile page Test - Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.qs.tests.UserProfileTest" />
+		</classes>
+	</test>
+
+	<test name="Customer page Test - Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.qs.tests.CustomerPageTest" />
+		</classes>
+	</test>
+
+	<test name="Tariff Codes page Test - Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.qs.tests.TariffCodesPageTest" />
+		</classes>
+	</test>
+
+	<test name="Bol Class Page Test - Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.qs.tests.BolClassTest" />
+		</classes>
+	</test>
+
+
+	<test name="Hazmat Group Page Test - Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.qs.tests.HazmatGroupPageTest" />
+		</classes>
+	</test>
+	
+	<test name="Container Type Page Test - Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.qs.tests.ContainerTypePageTest" />
+		</classes>
+	</test>
+	<test name="Product Page Test - Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.qs.tests.ProductPageTest" />
+		</classes>
+	</test>
+	
+	
 
 </suite>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Quicks Ship Test automtion regression suite - Sharan. Hagargi]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.qs.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.qs.listeners.TesultsListener"/>
+  </listeners>
+  <test thread-count="3" verbose="3" name="Home page Test - Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.qs.tests.HomePageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="userAccountNameTest"/>
+        </methods>
+      </class> <!-- com.qa.qs.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Home page Test - Chrome(failed) -->
+  <test thread-count="3" verbose="3" name="Customer page Test - Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.qs.tests.CustomerPageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="verifyCreateContactTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.qa.qs.tests.CustomerPageTest -->
+    </classes>
+  </test> <!-- Customer page Test - Chrome(failed) -->
+  <test thread-count="3" verbose="3" name="Hazmat Group Page Test - Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.qs.tests.HazmatGroupPageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="verifyCreateHzGroupPageTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.qa.qs.tests.HazmatGroupPageTest -->
+    </classes>
+  </test> <!-- Hazmat Group Page Test - Chrome(failed) -->
+  <test thread-count="3" verbose="3" name="Bol Class Page Test - Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.qs.tests.BolClassTest">
+        <methods>
+          <include name="verifyCreateBOLCalssTest" invocation-numbers="1"/>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.qs.tests.BolClassTest -->
+    </classes>
+  </test> <!-- Bol Class Page Test - Chrome(failed) -->
+  <test thread-count="3" verbose="3" name="User Profile page Test - Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.qs.tests.UserProfileTest">
+        <methods>
+          <include name="verifyUpdateUserProfileDataTest"/>
+          <include name="verifygetAllReActiceUserProfileTest"/>
+          <include name="verifyDeleteUserProfile2Test"/>
+          <include name="verifyUserProfileResetPWDTest"/>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="verifyUpdateUserProfileDataConfirmTest"/>
+          <include name="verifyDeleteUserProfile1Test"/>
+          <include name="verifyCreateUserRoleTest" invocation-numbers="1"/>
+          <include name="verifygetInactiveUserProfileTest"/>
+          <include name="verifygetInactiveUserProfileTitleTest"/>
+          <include name="verifygetReActiceUserProfileTest"/>
+        </methods>
+      </class> <!-- com.qa.qs.tests.UserProfileTest -->
+    </classes>
+  </test> <!-- User Profile page Test - Chrome(failed) -->
+  <test thread-count="3" verbose="3" name="Container Type Page Test - Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.qs.tests.ContainerTypePageTest">
+        <methods>
+          <include name="verifyUpdateUserProfileDataTest"/>
+          <include name="verifyAddContainerTypeRecordTest" invocation-numbers="0 1 2"/>
+          <include name="SetUp"/>
+          <include name="tearDown"/>
+          <include name="verifyDeleteUserProfileTest"/>
+          <include name="verifyUpdateUserProfileDataConfirmTest"/>
+        </methods>
+      </class> <!-- com.qa.qs.tests.ContainerTypePageTest -->
+    </classes>
+  </test> <!-- Container Type Page Test - Chrome(failed) -->
+</suite> <!-- Failed suite [Quicks Ship Test automtion regression suite - Sharan. Hagargi] -->

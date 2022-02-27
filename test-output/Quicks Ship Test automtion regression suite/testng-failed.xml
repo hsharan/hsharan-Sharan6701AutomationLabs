@@ -2,18 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="3" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Quicks Ship Test automtion regression suite]" parallel="tests">
   <listeners>
+    <listener class-name="com.qa.qs.listeners.ExtentReportListener"/>
     <listener class-name="com.qa.qs.listeners.TesultsListener"/>
   </listeners>
-  <test thread-count="3" verbose="3" name="Home page Test - Chrome(failed)" parallel="tests">
+  <test thread-count="3" verbose="3" name="Customer page Test - Chrome(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qa.qs.tests.HomePageTest">
+      <class name="com.qa.qs.tests.CustomerPageTest">
         <methods>
           <include name="SetUp"/>
           <include name="tearDown"/>
-          <include name="userAccountNameTest"/>
+          <include name="verifyCreateContactTest" invocation-numbers="3"/>
         </methods>
-      </class> <!-- com.qa.qs.tests.HomePageTest -->
+      </class> <!-- com.qa.qs.tests.CustomerPageTest -->
     </classes>
-  </test> <!-- Home page Test - Chrome(failed) -->
+  </test> <!-- Customer page Test - Chrome(failed) -->
 </suite> <!-- Failed suite [Quicks Ship Test automtion regression suite] -->
